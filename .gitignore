@@ -1,0 +1,5 @@
+.vscode/
+__pycache__/
+.env
+career_advice.txt
+app/vector_db/

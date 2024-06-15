@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "langserve_dev"
+version = "0.1.0"
+description = ""
+authors = ["SimTet <simon.tetzner@googlemail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+langchain-cli = "^0.0.23"
+pydantic = "<2"
+langchain-community = "^0.2.1"
+langchain-openai = "^0.1.8"
+python-dotenv = "^1.0.1"
+numexpr = "^2.10.0"
+langchain-chroma = "^0.1.1"
+streamlit = "^1.35.0"
+
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
