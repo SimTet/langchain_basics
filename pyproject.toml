@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "langserve_dev"
+name = "langchain_basics"
 version = "0.1.0"
 description = ""
 authors = ["SimTet <simon.tetzner@googlemail.com>"]
