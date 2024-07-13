@@ -8,7 +8,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.pydantic_v1 import BaseModel
 from langchain_core.runnables import RunnableParallel, RunnablePassthrough
 from langchain_chroma import Chroma
-from app.config import settings
+from config import settings
 from dotenv import load_dotenv
 load_dotenv()
 

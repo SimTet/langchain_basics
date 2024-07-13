@@ -16,6 +16,8 @@ python-dotenv = "^1.0.1"
 numexpr = "^2.10.0"
 langchain-chroma = "^0.1.1"
 streamlit = "^1.35.0"
+protobuf = "<4"
+chromadb = "<0.5.4"
 
 
 [tool.poetry.group.dev.dependencies]
