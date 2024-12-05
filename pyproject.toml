@@ -1,18 +1,24 @@
-[tool.poetry]
-name = "langchain_basics"
+[project]
+name = "langchain-basics"
 version = "0.1.0"
-description = ""
-authors = ["SimTet <simon.tetzner@googlemail.com>"]
+description = "Add your description here"
 readme = "README.md"
-package-mode = false
+requires-python = ">=3.11"
+dependencies = [
+    "langchain>=0.3.9",
+    "langchain-openai>=0.2.10",
+    "httpx>=0.27.2",
+    "langserve>=0.3.0",
+    "fastapi>=0.115.5",
+    "langchain-cli>=0.0.33",
+    "pydantic-settings>=2.6.1",
+    "langchain-chroma>=0.1.4",
+    "langchain-community>=0.3.8",
+    "bs4>=0.0.2",
+]
 
-[tool.poetry.dependencies]
-python = ">=3.11,<3.13"
-langchain = "^0.3.3"
-langserve = "^0.3.0"
-langchain-cli = "^0.0.31"
-
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+[dependency-groups]
+dev = [
+    "jupyter>=1.1.1",
+    "streamlit>=1.40.2",
+]
