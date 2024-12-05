@@ -3,7 +3,7 @@ from langchain_openai import ChatOpenAI
 from langserve import add_routes
 from app.config import settings
 from dotenv import load_dotenv
-from app.multiquery_chain import chain
+
 load_dotenv()
 
 app = FastAPI(
@@ -18,13 +18,6 @@ add_routes(
                temperature=0.2),
     path="/chat",
 )
-
-add_routes(
-    app,
-    chain,
-    path="/rag_chat",
-)
-
 
 if __name__ == "__main__":
     import uvicorn
